@@ -95,7 +95,7 @@ nav a:hover {
 #services {
     padding: 60px 20px; /* Spacing for top and bottom */
     text-align: center;
-    background: url('https://wallpaperaccess.com/full/2482245.jpg') no-repeat center center/cover; /* Background image */
+    background: url('WEB2.jpeg') no-repeat center center/cover; /* Background image */
     position: relative; /* For pseudo-element */
 }
 
@@ -151,7 +151,7 @@ nav a:hover {
 /* About Section */
 #about {
     padding: 40px 20px;
-    background: url('https://wallpaperaccess.com/full/2482245.jpg') no-repeat center center/cover; /* Background image */
+    background: url('WEB2.jpeg') no-repeat center center/cover; /* Background image */
     position: relative; /* For pseudo-element */
 }
 .about-content p {
