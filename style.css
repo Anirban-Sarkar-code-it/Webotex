@@ -50,7 +50,7 @@ nav a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('https://jbsoftware.ca/wp-content/uploads/web-design.jpg') no-repeat center center/cover;
+    background: url('Web.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
