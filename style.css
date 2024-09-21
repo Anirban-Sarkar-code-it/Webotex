@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2; /* Light background for contrast */
+}
+
+/* Header Styles */
+header {
+    background: rgba(51, 51, 51, 0.9); /* Slightly transparent for a modern look */
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Centering the nav */
+    margin: auto; /* Centering the nav */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #ff5722; /* Change color on hover */
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://jbsoftware.ca/wp-content/uploads/web-design.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative; /* For the overlay */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Above overlay */
+}
+
+.cta {
+    background: #ff5722;
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.cta:hover {
+    background: #e64a19; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling */
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px; /* Spacing for top and bottom */
+    text-align: center;
+    background: url('https://wallpaperaccess.com/full/2482245.jpg') no-repeat center center/cover; /* Background image */
+    position: relative; /* For pseudo-element */
+}
+
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White overlay for readability */
+    z-index: 1;
+}
+
+#services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em; /* Larger heading */
+    color: #333; /* Dark text */
+    position: relative;
+    z-index: 2; /* Above overlay */
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Responsive behavior */
+    z-index: 2; /* Above overlay */
+    position: relative;
+}
+
+.service-card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px; /* More rounded corners */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Box shadow for depth */
+    width: 250px; /* Fixed width */
+    margin: 10px; /* Spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.service-card i {
+    font-size: 2em; /* Larger icons */
+    color: #ff5722; /* Icon color */
+    margin-bottom: 15px; /* Spacing below icon */
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: url('https://wallpaperaccess.com/full/2482245.jpg') no-repeat center center/cover; /* Background image */
+    position: relative; /* For pseudo-element */
+}
+.about-content p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    font-size: 1.1em; /* Slightly increase font size for readability */
+}
+
+.about-content strong {
+    color: #ff5722; /* Highlight bold text in your brand color */
+}
+#about {
+    padding: 40px 20px;
+    background: url('https://wallpaperaccess.com/full/2482245.jpg') no-repeat center center/cover; /* Background image */
+    position: relative; /* For pseudo-element */
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.about-content {
+    position: relative; /* For z-index */
+    z-index: 2; /* Above overlay */
+    color: #fff; /* White text color for contrast */
+}
+
+.about-content p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    font-size: 1.1em; /* Slightly increase font size for readability */
+}
+
+.about-content strong {
+    color: #ff5722; /* Highlight bold text in your brand color */
+}
+
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White overlay for readability */
+    z-index: 1;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Above overlay */
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 40px 20px;
+    background: url('assets/images/testimonials-bg.jpg') no-repeat center center/cover; /* Background image */
+    position: relative; /* For pseudo-element */
+}
+
+#testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White overlay for readability */
+    z-index: 1;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the card */
+    max-width: 600px; /* Limit width */
+    position: relative; /* For z-index */
+    z-index: 2; /* Above overlay */
+}
+
+.testimonial-card p {
+    font-style: italic; /* Italicize testimonial */
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 10px; /* Spacing */
+    font-weight: bold; /* Emphasize client name */
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: url('assets/images/contact-bg.jpg') no-repeat center center/cover; /* Background image */
+    position: relative; /* For pseudo-element */
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White overlay for readability */
+    z-index: 1;
+}
+
+#contact h2 {
+    position: relative;
+    z-index: 2; /* Above overlay */
+}
+
+/* Contact Form */
+#contact form {
+    max-width: 600px; /* Center the form */
+    margin: auto; /* Center form */
+    position: relative; /* For z-index */
+    z-index: 2; /* Above overlay */
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Spacing between fields */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #ff5722; /* Highlight border on focus */
+}
+
+#contact button {
+    padding: 10px 20px;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background: #e64a19; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff5722; /* Change color on hover */
+}
